@@ -1,0 +1,173 @@
+/* == General */
+
+.text-justify {
+  -moz-hyphens: auto;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.spacer-20 {
+  margin-top: 20px;
+}
+
+.spacer-40 {
+  margin-top: 40px;
+}
+
+.spacer-80 {
+  margin-top: 80px;
+}
+
+.debug {
+  border: solid 1px red;
+}
+
+
+/* == Colors */
+
+.dark-primary-color    { background: #4B0E20; }
+.default-primary-color { background: #982C4B; }
+.light-primary-color   { background: #A59E40; }
+
+.text-primary-color    { color: #982C4B; }
+
+.background-dark-color    { background: #135265; }
+.background-light-color  { background: #37BCE4; }
+
+.accent-color          { background: #03A9F4; }
+.divider-color         { border-color: #B6B6B6; }
+
+
+/*
+
+FFFFFF
+EEFFFF
+F2F2F2
+f0f0ee
+E0F2DA
+EAE3E5
+FFCCDA
+DDD7D9
+9BF279
+B9D8AD
+BBCCDD
+FF99B6
+AABBDD
+AA8899
+449922
+527F3F
+338811
+555577
+BASE 982C4B
+4C3D41
+A80030
+881133
+113388
+2B2B2B
+660022
+002200
+101110
+
+*/
+
+
+
+.color-sellout-pink {
+  background-color: #DB2766;
+}
+
+
+/* == Fonts */
+
+@font-face {
+  font-family: "Linux Biolinum";
+  src: url('/assets/fonts/LinBiolinum_R.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-style: italic;
+  src: url('/assets/fonts/LinBiolinum_RI.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-weight: bold;
+  src: url('/assets/fonts/LinBiolinum_RB.woff') format('woff');
+}
+
+body {
+  font-family: 'Linux Biolinum';
+  font-size: 16px;
+}
+
+
+/* == Sections */
+
+
+.footer {
+  background-color: #2e3436;
+  color: #eeeeec;
+  margin-top : 2em;
+  padding-bottom : 2em;
+  padding-top : 2em;
+}
+
+.footer h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer i {
+  background-color: #666666;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer a {
+  color: #eeeeec;
+}
+
+.circled-icon i {
+  background-color: #eeeeec;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.circled-icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-detail {
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 6px;
+}
+
+.service-detail a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-detail i {
+  line-height: 200px;
+  font-size: 100px;
+  vertical-align: middle;
+}
+
+.service-detail:hover {
+  background-color: #ccc;
+}
