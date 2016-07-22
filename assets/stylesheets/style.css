@@ -171,3 +171,8 @@ body {
   -webkit-border-radius:6px;
   border-radius:6px;
 }
+
+.credit {
+  font-size: 8px;
+  color: #555555;
+}
