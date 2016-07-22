@@ -173,7 +173,7 @@ body {
 }
 
 .with-background-path {
-  background-image: url(/assets/images/fond-chemin.png);
+  background-image: url(/assets/images/fond-chemin-light.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
