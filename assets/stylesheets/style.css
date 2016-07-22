@@ -171,3 +171,9 @@ body {
 .service-detail:hover {
   background-color: #ccc;
 }
+
+.with-background-path {
+  background-image: url(/assets/images/fond-chemin.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
