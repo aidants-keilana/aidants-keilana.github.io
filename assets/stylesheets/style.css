@@ -177,3 +177,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.service-image {
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+}
