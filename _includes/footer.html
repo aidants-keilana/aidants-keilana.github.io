@@ -1,45 +1,46 @@
 <footer class="footer">
   <div class="container-fluid">
-    <small>
     <div class="container">
       <div class="row">
-        <div class="col-md-3 text-center">
-          <div>
+        <div class="col-md-4 text-center">
+          <img alt='Logo Aidants Keilana' src='/assets/images/logo.svg' width="150" class="img-responsive center-block">
+        </div>
+        <div class="col-md-4">
+          <div class="circled-icon">
             <i class="fa fa-map-marker"></i>
             {{site.data.contact.address}}
           </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <div>
+          <div class="circled-icon">
             <i class="fa fa-phone"></i>
             {{site.data.contact.phone}}
           </div>
-        </div>
-        <div class="col-md-3 text-center">
-          <div>
+          <div class="circled-icon">
             <a href="mailto:{{site.data.contact.email}}">
               <i class="fa fa-envelope"></i>
               {{site.data.contact.email}}
             </a>
           </div>
         </div>
-        <div class="col-md-3 text-center">
-          <div>
-            <a href="{{site.data.contact.facebook}}">
-              <i class="fa fa-facebook"></i>
-            </a>
+        <div class="col-md-4">
+          <h1>{{site.data.site.title}}</h1>
+          <p><i>{{site.data.site.baseline}}</i></p>
+          <div class="text-center circled-icon">
+            {% for link in site.data.social %}
+              <a href='{{link.url}}'><i class="fa {{link.icon}}"></i></a>
+            {% endfor %}
           </div>
         </div>
       </div>
-      <div class="row spacer-20">
-        <div class="col-md-12">
-          <p class="text-center">
-            Virginie Albiez&nbsp;&copy;&nbsp;2011 - 2015.
-            Site généré le {{ site.time | date: "%-d %b %Y" }} à {{ site.time | date: "%H:%M" }}.
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            <small>
+             &copy; 2016<script>new Date().getFullYear()>2016&&document.write("-"+new Date().getFullYear());</script>, {{site.data.site.title}}.
+              Site généré le {{ site.time | date: "%-d %b %Y" }} à {{ site.time | date: "%H:%M" }}.
+            </small>
           </p>
         </div>
       </div>
     </div>
-    </small>
   </div>
 </footer>
